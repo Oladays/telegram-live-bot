@@ -20,6 +20,18 @@ if (!token || !channelId || !adminId) {
 
 const bot = new TelegramBot(token, { polling: true });
 
+// Without these, a bad token or network hiccup can crash the process with
+// no useful output — these make sure the real error gets printed.
+bot.on('polling_error', (err) => {
+  console.error('Polling error:', err.message);
+});
+process.on('unhandledRejection', (err) => {
+  console.error('Unhandled rejection:', err);
+});
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught exception:', err);
+});
+
 // ---- Edit this list any time to add/remove messages ----
 const messages = [
   '✅ ₦50,000 GIVEAWAY LIVE NOW!!',
