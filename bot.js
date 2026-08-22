@@ -1,5 +1,13 @@
 require('dotenv').config();
+const http = require('http');
 const TelegramBot = require('node-telegram-bot-api');
+
+// Render (free tier) requires a Web Service to bind to a port.
+// This tiny server just answers health checks — it doesn't do anything else.
+const PORT = process.env.PORT || 3000;
+http.createServer((req, res) => res.end('Bot is running.')).listen(PORT, () => {
+  console.log(`Health check server listening on port ${PORT}`);
+});
 
 const token = process.env.BOT_TOKEN;
 const channelId = process.env.CHANNEL_ID; // e.g. @yourchannel or -100xxxxxxxxxx
