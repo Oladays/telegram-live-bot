@@ -1,0 +1,13 @@
+{
+  "name": "telegram-live-bot",
+  "version": "1.0.0",
+  "description": "Posts randomized hype messages to a Telegram channel during a live stream, deleting each after 30s, with no immediate repeats.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}
