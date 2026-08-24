@@ -51,9 +51,9 @@ const path = require('path');
 const MESSAGES_FILE = path.join(__dirname, 'messages.json');
 
 const defaultMessages = [
-  '✅ ₦50,000 GIVEAWAY LIVE NOW!!',
+  '✅ $50~75,000 GIVEAWAY LIVE NOW!!',
   'WHERE ARE YOU?? 🫵🏽🫵🏽',
-  '🫵🏽 ₦50,000 GIVEAWAY FOR YOU',
+  '🫵🏽 $50~75,000 GIVEAWAY FOR YOU',
   'MAKING MONEY LIVE NOW 🔥',
   'LETS MAKE MONEY LIVE NOW 🔥🔥',
   'LIVE TRADING STARTED!! 🥳',
