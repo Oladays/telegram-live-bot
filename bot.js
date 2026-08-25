@@ -52,9 +52,9 @@ const LIVE_MESSAGES_FILE = path.join(__dirname, 'messages.json');
 const AUTO_MESSAGES_FILE = path.join(__dirname, 'auto-messages.json');
 
 const defaultLiveMessages = [
-  '✅ ₦50,000 GIVEAWAY LIVE NOW!!',
+  '✅ $50~75,000 GIVEAWAY LIVE NOW!!',
   'WHERE ARE YOU?? 🫵🏽🫵🏽',
-  '🫵🏽 ₦50,000 GIVEAWAY FOR YOU',
+  '🫵🏽 $50~75,000 GIVEAWAY FOR YOU',
   'MAKING MONEY LIVE NOW 🔥',
   'LETS MAKE MONEY LIVE NOW 🔥🔥',
   'LIVE TRADING STARTED!! 🥳',
